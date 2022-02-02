@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../images/login_bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.loginAndRegBox {
+  width: 400px;
+  height: 310px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.loginAndRegBox .title-box {
+  height: 60px;
+  background: url('../images/login_title.png') no-repeat center;
+}
+.loginAndRegBox .login-box .layui-form-loginAndReg,
+.loginAndRegBox .reg-box .layui-form-loginAndReg {
+  padding: 0 30px;
+}
+.loginAndRegBox .login-box .layui-form-loginAndReg .layui-form-item,
+.loginAndRegBox .reg-box .layui-form-loginAndReg .layui-form-item {
+  position: relative;
+}
+.loginAndRegBox .login-box .layui-form-loginAndReg .layui-form-item i,
+.loginAndRegBox .reg-box .layui-form-loginAndReg .layui-form-item i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.loginAndRegBox .login-box .layui-form-loginAndReg .layui-form-item input,
+.loginAndRegBox .reg-box .layui-form-loginAndReg .layui-form-item input {
+  padding-left: 32px;
+}
+.loginAndRegBox .login-box .layui-form-loginAndReg .links,
+.loginAndRegBox .reg-box .layui-form-loginAndReg .links {
+  display: flex;
+  justify-content: flex-end;
+}
+.loginAndRegBox .login-box .layui-form-loginAndReg .links a,
+.loginAndRegBox .reg-box .layui-form-loginAndReg .links a {
+  font-size: 12px;
+}
+.loginAndRegBox .reg-box {
+  display: none;
+}
