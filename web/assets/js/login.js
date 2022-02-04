@@ -52,18 +52,20 @@ $(function () {
   //listening submit event of reg form
   $('#form_login').on('submit', function (e) {
     e.preventDefault();
+
     $.ajax({
       url: '/api/login',
       method: 'POST',
       data: $(this).serialize(),
       success: function (res) {
-        if (res !== 0) {
+        console.log(res);
+        if (res.status !== 0) {
           return layer.msg("登陆失败！");
         }
         layer.msg("登陆成功！");
         localStorage.setItem('token', res.token)
         //Jump to the background home page
-        location.href = '/index.html';
+        location.href = './index.html';
       }
     })
   })
