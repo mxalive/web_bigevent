@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- import layui style  -->
+  <link rel="stylesheet" href="../assets/lib/layui/css/layui.css">
+  <!-- import cropper style -->
+  <link rel="stylesheet" href="../assets/lib/cropper/cropper.css">
+  <!-- import user defined style  -->
+  <link rel="stylesheet" href="../assets/css/user/user_avatar.css">
+</head>
+
+<body>
+  <div class="layui-card">
+    <div class="layui-card-header">更换头像</div>
+    <div class="layui-card-body">
+      <!-- row 1 the area of picture cutting and picture viewing -->
+      <div class="row1">
+        <!-- image cutting area -->
+        <div class="cropper-box">
+          <!-- this img tag is  pretty important,it wiil be the cutting area -->
+          <img id="image" src="../assets/images/sample.jpg" alt="">
+        </div>
+
+        <!-- image previewing area -->
+        <div class="preview-box">
+          <div>
+            <!-- width and height both with 100px previewing area -->
+            <div class="img-preview w100"></div>
+            <p class="size">100 x 100</p>
+          </div>
+          <div>
+            <!-- width and height both with 50px previewing area -->
+            <div class="img-preview w50"></div>
+            <p class="size">50 x 50</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- row2-button area -->
+      <div class="row2">
+        <input type="file" id="file" accept="image/png,image/jpeg">
+        <button type="button" class="layui-btn" id="btnChooseImage">上传</button>
+        <button type="button" id="btnUpload" class="layui-btn layui-btn-danger">确定</button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <!-- import layui.js -->
+  <script src="../assets/lib/layui/layui.all.js"></script>
+  <!-- import jquery.js -->
+  <script src="../assets/lib/jquery.js"></script>
+  <script src="../assets/lib/cropper/Cropper.js"></script>
+  <script src="../assets/lib/cropper/jquery-cropper.js"></script>
+  <!-- import user js -->
+  <script src="../assets/js/baseAPI.js"></script>
+  <script src="../assets/js/user/user_avatar.js"></script>
+</body>
+
+</html>
