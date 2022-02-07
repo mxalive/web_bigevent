@@ -20,7 +20,6 @@ $(function () {
   //bind change event for the file selection box
   $("#file").on('change', function (e) {
     //obtain the file selected by user
-    console.log(e);
     let filelist = e.target.files;
     if (filelist.length === 0) {
       return layer.msg('请选择照片！')
